@@ -440,7 +440,7 @@
   font-weight: 400;
   line-height: normal;
 
-  border: none;
+  border: 1px solid #dc7000;
   padding: 10px 12px;
   border-radius: 8px;
   background: #dc7000;
@@ -449,6 +449,13 @@
   right: 5px;
   top: 50%;
   transform: translateY(-50%);
+  transition: all 0.3s;
+}
+
+.home-contact__button:hover {
+  background: transparent;
+  border: 1px solid #dc7000;
+  color: #dc7000;
 }
 
 @media screen and (min-width: 768px) {

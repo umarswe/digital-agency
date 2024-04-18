@@ -193,30 +193,27 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 187.5%;
+  opacity: 0;
   color: hsla(0, 0%, 100%, 0.2);
   -webkit-background-clip: text;
           background-clip: text;
   background-repeat: no-repeat;
   background-image: linear-gradient(45deg, rgba(110, 216, 60, 0.7882352941), #e47500);
-  -webkit-animation: fadeIn 3s;
-          animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s forwards;
+          animation: fadeIn 3s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 @-webkit-keyframes fadeIn2 {
   from {
-    display: none;
-  }
-  to {
-    display: inline-block;
+    opacity: 1;
   }
 }
 
 @keyframes fadeIn2 {
   from {
-    display: none;
-  }
-  to {
-    display: inline-block;
+    opacity: 1;
   }
 }
 .contact-hero__image-wrapper {
@@ -920,7 +917,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  border: none;
+  border: 1px solid #dc7000;
   padding: 10px 12px;
   border-radius: 8px;
   background: #dc7000;
@@ -929,6 +926,14 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.home-contact__button:hover {
+  background: transparent;
+  border: 1px solid #dc7000;
+  color: #dc7000;
 }
 
 @media screen and (min-width: 768px) {
