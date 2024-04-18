@@ -18,6 +18,15 @@
   align-items: center;
 }
 
+.header__logo {
+  transition: all 0.3s;
+}
+
+.header__logo:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
 .header__menu-wrapper {
   border: none;
   background-color: transparent;
@@ -35,6 +44,15 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.header__item {
+  transition: all 0.3s;
+}
+
+.header__item:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
 }
 
 .header__link-contact {

@@ -524,6 +524,7 @@
   font-weight: 500;
   line-height: normal;
   margin-bottom: 15px;
+  transition: all 0.3s;
 }
 
 .footer__links-item {
@@ -542,6 +543,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: 186.3%;
+  transition: all 0.3s;
+}
+
+.footer__link:hover,
+.footer__links-title:hover {
+  color: #dc7000;
+  cursor: pointer;
 }
 
 .footer__social-links {
@@ -553,6 +561,11 @@
   background-color: #fff;
   padding: 11px;
   border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.footer__social-icon:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (min-width: 768px) {
